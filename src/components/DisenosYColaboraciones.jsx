@@ -2,14 +2,14 @@ import Reveal from './Reveal.jsx'
 import { InkStroke } from './QueEsYHacemos.jsx'
 
 const notebooks = [
-  { cls: 'nb1', label: 'Own your growth' },
-  { cls: 'nb2', label: 'Where ideas grow' },
-  { cls: 'nb3', label: 'Planifica · Ejecuta · Logra' },
-  { cls: 'nb4', label: 'Moon & Mind' },
-  { cls: 'nb5', label: 'Let yourself bloom' },
-  { cls: 'nb6', label: 'Sin excusas' },
-  { cls: 'nb7', label: 'Sunsets & Dreams' },
-  { cls: 'nb8', label: 'Beyond the Stars' },
+  { src: '/disenos/own-your-growth.jpg', label: 'Own your growth' },
+  { src: '/disenos/where-ideas-grow.jpg', label: 'Where ideas grow' },
+  { src: '/disenos/planifica-ejecuta-logra.jpg', label: 'Planifica · Ejecuta · Logra' },
+  { src: '/disenos/moon-mind.jpg', label: 'Moon & Mind' },
+  { src: '/disenos/let-yourself-bloom.jpg', label: 'Let yourself bloom' },
+  { src: '/disenos/sin-excusas.jpg', label: 'Sin excusas' },
+  { src: '/disenos/sin-detalle-cuenta.jpg', label: 'Cada detalle cuenta' },
+  { src: '/disenos/sunsets-dreams.jpg', label: 'Sunsets & Dreams' },
 ]
 
 export function Disenos() {
@@ -29,11 +29,15 @@ export function Disenos() {
         </div>
         <div className="gallery-grid">
           {notebooks.map((n, i) => (
-            <Reveal key={n.cls} className={`nb-card ${n.cls}`} delay={i * 60}>
+            <Reveal key={n.src} className="nb-card" delay={i * 60}>
+              <img src={n.src} alt={n.label} loading="lazy" />
               <span>{n.label}</span>
             </Reveal>
           ))}
         </div>
+        <Reveal className="stars-feature" delay={480}>
+          <img src="/disenos/beyond-the-stars.jpg" alt="Beyond the Stars" />
+        </Reveal>
       </div>
     </section>
   )
