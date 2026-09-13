@@ -35,9 +35,12 @@ export function Disenos() {
             </Reveal>
           ))}
         </div>
-        <Reveal className="stars-feature" delay={480}>
-          <img src="/disenos/beyond-the-stars.jpg" alt="Beyond the Stars" />
-        </Reveal>
+        <div className="stars-feature-wrap">
+          <Reveal className="stars-feature" delay={480}>
+            <img src="/disenos/beyond-the-stars.jpg" alt="Beyond the Stars" />
+          </Reveal>
+          <span className="stars-feature-caption">Edición especial — Beyond the Stars</span>
+        </div>
       </div>
     </section>
   )

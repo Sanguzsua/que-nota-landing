@@ -53,17 +53,12 @@ export default function Hero() {
       </div>
 
       <div className="hero-visual">
-        <Reveal className="notebook">
-          <div className="cover">
-            <div className="ribbon"></div>
-            <div className="emblem">
-              <div className="qn">QN</div>
-              <div className="word">QUE NÖTA</div>
-            </div>
-          </div>
-          <div className="pen"></div>
+        <Reveal className="hero-photo">
+          <img src="/disenos/beyond-the-stars.jpg" alt="Agenda Beyond the Stars — Que Nöta" />
         </Reveal>
-        <Reveal className="float-tag">Agenda negra con detalles dorados — acabado premium para tu marca.</Reveal>
+        <Reveal className="float-tag" delay={150}>
+          Beyond the Stars — uno de nuestros diseños insignia, acabado premium para tu marca.
+        </Reveal>
       </div>
     </section>
   )
