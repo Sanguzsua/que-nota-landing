@@ -59,25 +59,21 @@ export function Colaboraciones() {
         <InkStroke style={{ marginTop: 18 }} />
         <div className="collabs-grid">
           <Reveal className="collab-block">
-            <div className="collab-name">iVascular — therapies for living</div>
+            <div className="collab-logo-badge">
+              <img src="/colaboraciones/ivascular-logo.jpg" alt="iVascular — therapies for living" />
+            </div>
             <div className="collab-mockups">
-              <div className="mockup-chip mk1">
-                <span>Cardio</span>
-              </div>
-              <div className="mockup-chip mk2">
-                <span>EV</span>
-              </div>
-              <div className="mockup-chip mk3">
-                <span>Brain</span>
-              </div>
+              <img className="mockup-photo" src="/colaboraciones/cardio.jpg" alt="iVascular Cardio" />
+              <img className="mockup-photo" src="/colaboraciones/ev.jpg" alt="iVascular EV" />
+              <img className="mockup-photo" src="/colaboraciones/brain.jpg" alt="iVascular Brain" />
             </div>
           </Reveal>
           <Reveal className="collab-block" delay={100}>
-            <div className="collab-name">Piratas — equipo de baloncesto</div>
+            <div className="collab-logo-badge collab-logo-badge--small">
+              <img src="/colaboraciones/piratas-logo.jpg" alt="Piratas — equipo de baloncesto" />
+            </div>
             <div className="collab-mockups">
-              <div className="mockup-chip mk4">
-                <span>Piratas</span>
-              </div>
+              <img className="mockup-photo" src="/colaboraciones/piratas-cover.jpg" alt="Piratas" />
             </div>
           </Reveal>
         </div>
