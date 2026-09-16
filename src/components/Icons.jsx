@@ -1,13 +1,23 @@
-const base = { fill: 'none', stroke: 'currentColor', strokeWidth: 1.6 }
+const base = { fill: 'none', stroke: 'currentColor', strokeWidth: 1.6, strokeLinecap: 'round', strokeLinejoin: 'round' }
 
 export const IconDesign = (p) => (
-  <svg width="20" height="20" viewBox="0 0 24 24" {...base} {...p}><path d="M12 20l7-14-7 3-7-3 7 14z" /></svg>
+  <svg width="20" height="20" viewBox="0 0 24 24" {...base} {...p}>
+    <path d="M12 20h9" />
+    <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4Z" />
+  </svg>
 )
 export const IconPersonalize = (p) => (
-  <svg width="20" height="20" viewBox="0 0 24 24" {...base} {...p}><path d="M7 7h.01M3 11l8-8h8v8l-8 8-8-8z" /></svg>
+  <svg width="20" height="20" viewBox="0 0 24 24" {...base} {...p}>
+    <path d="M12.586 2.586A2 2 0 0 0 11.172 2H4a2 2 0 0 0-2 2v7.172a2 2 0 0 0 .586 1.414l8.704 8.704a2.426 2.426 0 0 0 3.42 0l6.58-6.58a2.426 2.426 0 0 0 0-3.42z" />
+    <path d="M7.5 7.5h.01" />
+  </svg>
 )
 export const IconProduction = (p) => (
-  <svg width="20" height="20" viewBox="0 0 24 24" {...base} {...p}><path d="M21 16V8l-9-5-9 5v8l9 5 9-5z" /></svg>
+  <svg width="20" height="20" viewBox="0 0 24 24" {...base} {...p}>
+    <path d="M21 8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16Z" />
+    <path d="M3.29 7 12 12l8.71-5" />
+    <path d="M12 22V12" />
+  </svg>
 )
 export const IconLeaf = (p) => (
   <svg width="22" height="22" viewBox="0 0 24 24" {...base} {...p}><path d="M11 20A7 7 0 0 1 4 13c0-5 5-11 7-13 2 2 7 8 7 13a7 7 0 0 1-7 7z" /></svg>

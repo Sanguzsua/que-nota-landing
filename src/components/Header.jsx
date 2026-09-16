@@ -32,7 +32,11 @@ export default function Header() {
           <a href="https://wa.me/573103275424" target="_blank" rel="noreferrer" className="btn nav-cta">
             Cotiza tu proyecto
           </a>
-          <button className="burger" aria-label="Abrir menú" onClick={() => setOpen(true)}>
+          <button
+            className={`burger ${open ? 'is-open' : ''}`}
+            aria-label={open ? 'Cerrar menú' : 'Abrir menú'}
+            onClick={() => setOpen((o) => !o)}
+          >
             <span></span>
             <span></span>
             <span></span>
@@ -41,9 +45,6 @@ export default function Header() {
       </header>
 
       <div className={`mobile-menu ${open ? 'open' : ''}`}>
-        <button className="close" aria-label="Cerrar menú" onClick={() => setOpen(false)}>
-          ✕
-        </button>
         {links.map((l) => (
           <a key={l.href} href={l.href} onClick={() => setOpen(false)}>
             {l.label}
