@@ -1,10 +1,10 @@
   :root{
-    --cream:#732F3B;
+    --cream:#1B2431;
     --cream-deep:#262626;
     --accent:#F2F2F2;
     --accent-soft:#8C8C8C;
     --ink:#F2F2F2;
-    --ink-soft:#C9AEB2;
+    --ink-soft:#A3AEBB;
     --white:#FFFFFF;
     --sage:#8C8C8C;
     --gold:#F2F2F2;
@@ -76,7 +76,7 @@
   /* ===== NAV ===== */
   header{
     position:fixed;top:0;left:0;width:100%;z-index:1000;
-    background:rgba(115,47,59,0.86);backdrop-filter:blur(10px);
+    background:rgba(27,36,49,0.86);backdrop-filter:blur(10px);
     border-bottom:1px solid rgba(242,242,242,.12);
     transition:padding .3s;
   }
@@ -327,7 +327,7 @@
   .stars-feature{
     border-radius:4px;overflow:hidden;
     box-shadow:0 16px 40px -16px rgba(0,0,0,.55);
-    width:200px;border:1px solid rgba(115,47,59,.3);
+    width:200px;border:1px solid rgba(27,36,49,.3);
   }
   .stars-feature img{width:100%;display:block;}
   .stars-feature-caption{
